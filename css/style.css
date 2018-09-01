@@ -267,6 +267,14 @@ body section img {
 		padding-top: 5px;
 	}
 
+	#green_box3 {
+	transform: translate(70%, -70%);
+	}
+
+	#green_box4 {
+	transform: translate(60%, -370%);
+	}
+
 
 }
 
@@ -393,7 +401,7 @@ body section img {
 
 #green_box3 {
 	margin: 0 auto;
-	transform: translate(70%, -280%);
+	transform: translate(70%, -180%);
 	height: 30%;
 	width: 40%;
 	position: relative;
@@ -433,7 +441,7 @@ body section img {
 
 #green_box4 {
 	margin: 0 auto;
-	transform: translate(60%, -290%);
+	transform: translate(60%, -200%);
 	height: 30%;
 	width: 40%;
 	border: 5px solid rgb(122,234,137);
