@@ -1,0 +1,422 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+
+html body {
+	background-color: #FFF;
+	margin: 0;
+	overflow-x: hidden;
+	font-family: 'Ubuntu Mono', monospace, sans-serif;
+	background: url(../images/background.png) no-repeat fixed;
+	background-size: cover;
+	position: relative;
+
+	/*font-family: 'Titillium Web', sans-serif;*/
+}
+
+header ul {
+	margin: 0;
+}
+
+header li {
+	display: inline-block;
+	text-align: center;
+	cursor: crosshair;
+}
+
+#hamburger {
+	z-index: 2;
+	position: fixed;
+	top: 10px;
+	left: 10px;
+	height: 50px;
+	width: 50px;
+	transition-duration: 0.5s;
+}
+
+#hamburger:hover {
+	cursor: crosshair;
+}
+
+#hamburger div:nth-child(1) {
+	bottom: 10px;
+}
+#hamburger div:nth-child(3) {
+	top: 10px;
+}
+
+#hamburger div {
+	position: absolute;
+	margin: auto;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	height: 2px;
+	width: 30px;
+	background-color: grey;
+	transition-duration: 0.5s;
+	border: 0px;
+}
+
+#hamburger div:nth-child(1) {
+	bottom: 10px;
+}
+#hamburger div:nth-child(3) {
+	top: 10px;
+}
+
+#hamburger.open {
+	transform: translateX(-7px);
+}
+
+#hamburger.open div:nth-child(1) {
+	transform: rotate(45deg) translateX(7px);
+}
+
+#hamburger.open div:nth-child(2) {
+	opacity: 0;
+}
+
+#hamburger.open div:nth-child(3) {
+	transform: rotate(-45deg) translateX(7px);
+}
+
+nav {
+	z-index: 3;
+	position: fixed;
+	top: 50px;
+	left: 50px;
+	display: none;
+	height: auto
+	width: 150px;
+	background-color: white;
+	box-shadow: 0 2px 3px rgba(0, 0, 0, 0.15);
+}
+
+nav ul {
+	height: auto;
+	width: 150px;
+	border-radius: 10px;
+}
+
+nav ul li {
+	list-style-type: none;
+	width: 100%;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border-bottom: 1px solid lightgrey;
+	display: inline-block;
+}
+
+nav ul li:hover {
+	background-color: #f2f2f2;
+}
+
+nav.open {
+	display: block;
+}
+
+section {
+	width: 100%;
+	position: relative;
+}
+
+
+/*first section*/
+
+#section1 {
+	height: 350px;
+	margin: auto;
+	top: 30px;
+}
+
+.green_box p {
+	padding: 0 10px;
+	color: white;
+}
+
+.green_box {
+	background-color:rgba(122,234,137,0.5);
+	position: relative;
+}
+
+h1 {
+	margin:auto;
+	left: 8px;
+	top: 3px;
+	color: rgb(49,240,249);
+	position: relative;
+	font-size: 3rem;
+}
+
+#water_gif {
+	width: 100%;
+	height: 300px;
+	position: relative;
+	border: 15px solid rgba(122,234,137,0.5);
+	transform: translateX(-30px);
+} 
+
+/*left_text section*/
+
+#section2 {
+	bottom: 100px;
+}
+
+.main_text {
+	margin: 10px;
+	background-color: #8B8B8D;
+}
+
+.main_text p {
+	padding: 10px;
+}
+
+
+
+/*
+ * Container
+ */
+.calendar_block {
+  margin: 20px 0;
+  width: 274px;
+}
+
+/*
+ * Calendar
+ */
+.calendar {
+  padding: 10px; 
+  color: #FFF;
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.2;
+  text-align: center; 
+  border: 3px solid #edeff2;
+  user-select: none;
+  margin: 10px;
+
+}
+
+.calender__header {
+    position: relative;
+    color: #FFF;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    text-align: center;
+    padding: 5px;
+    margin: 0 auto;
+    line-height: 1.2;
+  }
+  
+  
+.calendar__header .calendar__btn {
+  padding: 10px 2px;   
+  background: transparent;
+  border: none;
+  cursor: crosshair;
+  display: inline-block;
+  font-size: 1rem;
+  color: #d3dbe8;
+}
+    
+.calendar__btn:hover {
+  border: 1px dotted #FFF;
+  background: rgba(255, 255, 255, 0.4);
+}
+
+
+.calendar__table {
+	margin: 0 auto;
+	margin-bottom: 30px;
+	margin-top:5px;
+  	width: 80%;
+}
+    
+.calendar__table-head {
+	padding: 12px 0;
+  	color: #000;
+  	font-size: 0.7rem;
+  	letter-spacing: 0.1em;
+  	text-align: center;
+}
+
+.calendar__table-cell {
+	border: 0.5px white dotted;
+	padding: 5px 4px;   
+  	color: #FFF;
+  	font-size: 14px;
+  	font-weight: 700;  
+  	cursor: crosshair;
+  	width: 40px;
+}
+ 
+.calendar__table-cell_disabled {
+  color: #d3dbe8; 
+  pointer-events: none;
+}
+    
+.calendar__table-cell:hover {
+  color: rgb(49,240,249);
+}
+
+/*calendar end*/
+
+.date_chosen {
+	margin-left: 5px;
+	padding: 5px;
+}
+
+.personal_details {
+	padding: 5px;
+	margin: auto;
+	left: 5px;
+	border: 1px #FFF solid;
+}
+
+.names p {
+	line-height: 35px !important;
+	white-space: nowrap;
+}
+
+
+.personal_detail_inputs {
+	display: inline-block;
+	width: 50%;
+	margin-left: 30px;
+}	
+
+.personal_detail_inputs > input {
+	margin: 7px;
+}
+
+.personal_detail_inputs > select {
+	margin: 7px;
+}
+
+.personal_details p {
+	margin: 7px 5px;
+	padding: 2px;
+	line-height: 1.2rem;
+}
+
+.personal_details input{
+	width: 100%;
+	margin-right: 5px;
+	padding: 3px;
+}
+
+.state {
+	display: inline-flex;
+	width: 100%;
+}
+
+select {
+	margin: auto;
+	padding: 0;
+	float: left;
+}
+
+#comments_box {
+	width: 97%;
+	display: inline-block;
+	align-items: center; 
+	margin: 0 5px;
+}
+
+
+#submit_b {
+	position: relative;
+	margin: auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	display: block;
+	text-align: center;
+	border: 2px #FFF solid;
+	border-radius: 15px;
+	background-color: grey;
+	font-style: bold;
+	font: 3rem;
+	padding: 10px 15px;
+	cursor: crosshair;
+}
+
+#submit_b:focus {
+    background-color: rgb(49,240,249);
+    transition: all 0.8s
+}
+
+
+#goHome {
+  position:fixed;
+  bottom:40px;
+  right:40px;
+  cursor:crosshair;
+  font-size:30px;
+  color:#000;
+  background: none;
+  border: none;
+}
+
+footer {
+	background-color:#8B8B8D;
+	width: 100%;
+	height: 30px;
+	padding: 0;
+	margin: 0 auto;
+}
+
+footer .container {	
+	position: absolute;
+	margin: auto;
+	width: 300px;
+	left: 0; 
+	right: 0;
+}
+
+footer p {
+	color: #FFF;
+	white-space: nowrap;
+	font-size: 1rem;
+	margin:0;
+	float: right;
+}
+
+footer ul {
+	width: 300px;
+	display: flex;
+	justify-content: space-between;
+	list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+footer li {
+	display: inline-block; 
+	text-align: center;
+	padding: 3px;
+}
+
+footer img {
+	height: 20px;
+	padding: 3px;
+}
+
+.line_v {
+	width: 20px;
+	height: 100%;
+	margin-left:65px;
+	background-color:rgba(250,128,114,0.8);
+	position: absolute;
+}
+
+.line_light_v {
+	width: 10px;
+	height: 100%;
+	margin-left:95px;
+	background-color: rgba(250,128,114,0.3);
+	position: absolute;
+}

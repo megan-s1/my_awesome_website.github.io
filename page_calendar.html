@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+
+<html>
+
+	<title>My website project</title>
+
+		<!-- bootstrap css -->
+
+		<meta http-equiv="Content-Type" content="text/html" charset="utf-8">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+		<!-- bootstrap css end-->
+
+
+	<link rel="stylesheet" href="css/style_page_calendar.css">
+
+	<!-- font links -->
+		<link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono" rel="stylesheet"> 
+
+		<link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet"> 
+
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+	<!-- font links end -->
+
+<head>
+
+	
+	<title>my cool website</title>
+
+</head>
+
+	<body>
+
+		<div class="line_v"></div>
+
+		<div class="line_light_v"></div>
+
+
+		<header>
+
+			<div class="container">
+				
+				<div id="hamburger">
+						<div></div>
+						<div></div>
+						<div></div>
+					</div>
+
+						<div class="container">
+							<nav>
+								<ul>
+									<li>Section1</li>
+									<li>Calendar</li>
+								</ul>
+							</nav>
+						</div><!--nav container end-->
+
+			</div><!--container end-->
+
+		</header>
+
+	
+		<section id="section1">
+
+			<div class="container">
+
+				<div class="row">
+
+					<div class="col-11 offset-1 clear-fix">
+
+						<img id="water_gif" src="images/water_gif.gif" alt="water_gif">
+
+					</div><!--end col-11-->
+
+				</div><!--end first row-->
+
+			</div><!--end first container-->
+
+		</section> <!--end section1-->
+					
+				
+		<section id="section2">
+
+			<div class="container">
+
+				<div class="row">
+
+					<div class="col-10 offset-1 clear-fix">
+				
+							<div class="main_text">
+
+								<h1>Heading here</h1>
+
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing 	elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+
+										<div class="row">
+											
+											<div class="col-12 clear-fix">
+
+												<div class="container">
+
+												    <div class="calendar">
+
+												      <div class="calendar__header">
+
+												      	<button class="calendar__btn calendar__btn_prev">&#8698;</button>
+
+												        	<span class="calendar__month">&lt;Month&gt;</span> <span class="calendar__year">&lt;Year&gt;</span>
+												        
+												        <button class="calendar__btn calendar__btn_next">&#8699;</button>
+
+												   	  </div> <!-- end calendar__header -->
+
+												        <table class="calendar__table">
+
+													          <thead class="calendar__table-head">
+
+													            <tr class="calendar__table-row">
+													              <th scope="col" class="calendar__table-col-header">Sun</th>
+													              <th scope="col" class="calendar__table-col-header">Mon</th>
+													              <th scope="col" class="calendar__table-col-header">Tue</th>
+													              <th scope="col" class="calendar__table-col-header">Wed</th>
+													              <th scope="col" class="calendar__table-col-header">Thu</th>
+													              <th scope="col" class="calendar__table-col-header">Fri</th>
+													              <th scope="col" class="calendar__table-col-header">Sat</th>
+													            </tr>
+
+													          </thead>
+												          
+												          <tbody class="calendar__table-body"></tbody>
+
+												        </table>
+
+											    	</div> <!-- end calendar -->
+
+											  	</div> <!-- end calendar container -->
+
+											</div> <!-- end col-12 -->
+
+										</div><!-- end row -->
+
+										<div class="row">
+
+											<div class="col-12 clear-fix">
+
+												<div class="date_chosen">
+
+													<p id="date">Date: </p>
+
+												</div><!--end date chosen -->
+
+												<div class="personal_details">
+
+													<div class="row">
+
+														<div class="col-3">
+
+															<div class="names">
+
+																<p>First Name:</p>
+
+																<p>Last Name: </p>
+
+																<p>Email: </p>
+
+																<p>State:</p>
+
+															</div><!--end names -->
+
+														</div> <!--end col-3 -->
+
+
+														<div class="personal_detail_inputs">
+
+															 <input type="first_name"> </input>	
+
+															 <input type="last_name"> </input>
+
+															 <input type="Email"> </input>
+
+															 <select>
+															  <option value="NSW">NSW</option>
+															  <option value="VIC">VIC</option>
+															  <option value="QLD">QLD</option>
+															  <option value="WA">WA</option>
+															  <option value="SA">SA</option>
+															  <option value="ACT">ACT</option>
+															  <option value="NT">NT</option>
+															  <option value="TAS">TAS</option>
+															</select>
+
+														</div> <!--end personal detail inputs -->
+
+													</div><!--end row -->
+
+														<p>Add your comments here</p>
+
+														<textarea id="comments_box" rows="6">...</textarea> <br />
+
+														<button id="submit_b">Submit</button>
+							
+												</div> <!---end personal details -->
+
+											</div> <!---end col -->
+
+										</div> <!---end row -->
+
+									<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+
+							</div><!--main text end-->
+			
+					</div> <!--end col-10-->
+
+				</div> <!--end row-->
+
+			</div> <!--end second container-->
+
+		</section><!--end section 2-->
+
+		<button id="goHome">&Uarrocir;</button>
+
+	<footer class="footer">
+
+			<div class="container">
+			
+					<ul>
+						<li>
+							<a href="https://twitter.com/?lang=en"><img src="images/footer_sm/twitter.png" alt="twitter"></a>
+						</li>
+						<li>
+							<a href="https://facebook.com"><img src="images/footer_sm/facebook.png" alt="facebook"></a>
+						</li>
+						<li>
+							<a href="https://instagram.com"><img src="images/footer_sm/instagram.png" alt="instagram"></a>
+						</li>
+						<li>
+							<p>Copyright 2018.</p>
+						</li>
+					</ul>			
+
+			</div><!--end container-->
+
+	</footer>		
+
+		<!-- Javascript / JQuery links -->
+
+			<!-- Bootstrap JS-->
+				<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+				<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+				<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+			<!-- JQuery -->
+				<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>	
+			<!--own JS document-->
+	  			<script src="js/script_page_calendar.js"></script>
+
+	  	<!-- Javascript / JQuery links end -->
+
+	</body>
+</html>
