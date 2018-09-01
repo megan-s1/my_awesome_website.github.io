@@ -159,7 +159,7 @@ section {
 
 h1 {
 	margin:auto;
-	left: 8px;
+	left: 10px;
 	top: 3px;
 	color: rgb(49,240,249);
 	position: relative;
@@ -186,7 +186,7 @@ h1 {
 }
 
 .main_text p {
-	padding: 10px;
+	padding: 20px;
 }
 
 
@@ -279,12 +279,12 @@ h1 {
 /*calendar end*/
 
 .date_chosen {
-	margin-left: 5px;
+	margin-left: 10px;
 	padding: 5px;
 }
 
 .personal_details {
-	padding: 5px;
+	padding: 10px;
 	margin: auto;
 	left: 5px;
 	border: 1px #FFF solid;
@@ -337,7 +337,7 @@ select {
 	width: 97%;
 	display: inline-block;
 	align-items: center; 
-	margin: 0 5px;
+	margin: 0 10px;
 }
 
 

@@ -328,9 +328,9 @@ span {
 .green_box_right {
 	margin: 0 auto;
 	top: -55px;
-	right: 38px;
+	right: 20px;
 	height: 40%;
-	width: 70%;
+	width: 80%;
 	position:relative;
 	border: solid 5px rgb(122,234,137);
 }
