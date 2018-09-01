@@ -291,7 +291,7 @@ h1 {
 }
 
 .names p {
-	line-height: 35px !important;
+	line-height: 35px;
 	white-space: nowrap;
 }
 
@@ -438,3 +438,93 @@ footer img {
 	background-color: rgba(250,128,114,0.3);
 	position: absolute;
 }
+
+@media only screen and (max-width : 400px)  {
+
+footer ul {
+		max-width: 30px;
+		margin-right: -10px;
+	}
+
+	#water_gif {
+		transform: translateX(-60px);
+		border: 5px solid rgba(122,234,137,0.5);
+		width: 130%;
+		margin-top: 30px;
+	}
+
+	body {
+		margin-left: 50px;
+	}
+
+	.line_v {
+		transform: translateX(-70px);
+	}
+
+	.line_light_v {
+		visibility: hidden;
+	}
+
+	#goHome {
+		transform: translateX(-40px);
+	}
+
+	.calendar__table-cell {
+		width: 35px;
+		font-size: 6px;
+		padding: 2px 1px;
+	}
+
+	.calendar__month {
+		font-size: 10px;
+	}
+
+	.calendar__year {
+		font-size: 10px;
+	}
+
+	.calendar__btn {
+		font-size: 10px;
+	}
+
+	.calendar__table-row {
+		font-size: 8px;
+	}
+
+	.personal_details {
+		font-size: 12px;
+		padding: 2px;
+	}
+
+	.names p {
+		line-height: 25px;
+		padding-top: 0;
+	}
+
+	.personal_detail_inputs {
+		font-size: 8px;
+		padding: 0;
+
+	}
+
+	#date {
+		font-size: 12px;
+		margin: 5px 0;
+	}
+
+	#comments_box {
+		width: 90%;
+	}
+
+	h1 {
+		font-size: 35px;
+		margin-left:2px;
+	}
+}
+
+
+
+
+
+
+
