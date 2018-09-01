@@ -26,7 +26,7 @@ $(document).ready(function() {
 
 
 	//text drop-downs
-	$('#top_dropdown1, #top_dropdown3, #top_dropdown4').slideUp();
+	$('#top_dropdown1, #top_dropdown3').slideUp();
 
 	$('#top_text1').click(function(){
 		$('#top_dropdown1').slideToggle();
