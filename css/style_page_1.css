@@ -1,3 +1,10 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+
 html body {
 	background-color: #FFF;
 	margin: 0;
@@ -6,10 +13,8 @@ html body {
 	background: url(../images/background.png) no-repeat fixed;
 	background-size: cover;
 	position: relative;
-
 	/*font-family: 'Titillium Web', sans-serif;*/
 }
-
 
 .line_v {
 	width: 20px;
@@ -123,12 +128,25 @@ nav ul li {
 	display: inline-block;
 }
 
+nav a {
+	color: #000;
+	text-decoration-style: none;
+}
+
+nav a:hover {
+	text-decoration-style: none;
+	cursor: crosshair;
+	color: #000;
+	font-style: none;
+}
+
 nav ul li:hover {
 	background-color: #f2f2f2;
 }
 
 nav.open {
 	display: block;
+	left: -10px;
 }
 
 section {
@@ -284,8 +302,7 @@ to disappear for mobile */
 	height: 200px;
 	margin: 0 auto;
 	position:relative;
-	transform: translateX(-100px);
-
+	transform: translateX(-10px);
 }
 
 span {
@@ -311,15 +328,15 @@ span {
 .green_box_right {
 	margin: 0 auto;
 	top: -55px;
-	right: -5px;
+	right: 38px;
 	height: 40%;
-	min-width: 170px;
+	width: 70%;
 	position:relative;
 	border: solid 5px rgb(122,234,137);
 }
 
 /* Small Devices, Tablets */
-@media only screen and (min-width : 500px)  {
+@media only screen and (max-width : 500px)  {
 	.green_box_right {
 	margin: 0 auto;
 	left: -126px;
@@ -327,7 +344,7 @@ span {
 	
 }
 
-@media only screen and (min-width : 200px)  {
+@media only screen and (max-width : 200px)  {
 	.right_text #image_7{
 		margin: 0 auto;
 		margin-left: 120px;
@@ -399,6 +416,11 @@ footer p {
 	margin:0;
 	float: right;
 }
+
+footer a {
+	cursor: crosshair;
+}
+
 
 footer ul {
 	display: flex;

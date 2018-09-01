@@ -112,12 +112,25 @@ nav ul li {
 	display: inline-block;
 }
 
+nav a {
+	color: #000;
+	text-decoration-style: none;
+}
+
+nav a:hover {
+	text-decoration-style: none;
+	cursor: crosshair;
+	color: #000;
+	font-style: none;
+}
+
 nav ul li:hover {
 	background-color: #f2f2f2;
 }
 
 nav.open {
 	display: block;
+	left: -10px;
 }
 
 section {
@@ -384,6 +397,11 @@ footer p {
 	margin:0;
 	float: right;
 }
+
+footer a {
+	cursor: crosshair;
+}
+
 
 footer ul {
 	width: 300px;
